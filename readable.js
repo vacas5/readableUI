@@ -74,6 +74,10 @@
         return parseFloat(num);
     };
 
+    _readable.index = function(number) {
+        return number + 1;
+    };
+
     return _readable;
 
 }));
