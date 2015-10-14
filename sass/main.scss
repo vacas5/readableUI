@@ -1,0 +1,129 @@
+
+@import "normalize";
+@import "bourbon/bourbon";
+@import "base/variables";
+
+$base-font-family: 'Avenir Next', Avenir, sans-serif;
+$heading-font-family: 'Avenir Next', Avenir, sans-serif;
+
+$blue: #8D99AE;
+$dark-blue: #2B2D42;
+$medium-gray: #8D99AE;
+$light-gray: #EDF2F4;
+$red: #EF233C;
+$dark-red: #D90429;
+
+$base-font-color: $medium-gray;
+$action-color: $red;
+
+$base-border-color: $blue;
+$base-border: 1px solid $base-border-color;
+
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+@import "base/grid-settings";
+
+@import "base/buttons";
+//@import "forms";
+@import "base/lists";
+//@import "tables";
+@import "base/typography";
+
+@import "neat/neat";
+
+h1,h2,h3,h4,h5,h6 {
+    color: $dark-blue;
+    font-weight: normal;
+}
+
+.main {
+    background-color: $medium-gray;
+}
+
+.container {
+    @include outer-container;
+}
+
+.details {
+    background-color: $light-gray;
+    padding: 2rem;
+    @include media($medium-screen-up) {
+        margin: 3rem 0;
+        @include span-columns(8);
+    }
+    pre {
+        margin: 1rem -0.625rem;
+    }
+}
+
+.download {
+    padding: 0 1rem;
+    color: $light-gray;
+    margin: 3rem 0;
+    @include media($medium-screen-up) {
+        @include span-columns(4);
+    }
+    p a {
+        color: $dark-blue;
+    }
+}
+
+.actions {
+    margin-bottom: 3rem;
+    @include media($medium-screen-up) {
+        margin-top: 2rem;
+    }
+}
+
+.title {
+    font-size: rem(40);
+    padding-bottom: rem(8);
+    border-bottom: 2px solid $base-border-color;
+}
+
+.subtitle {
+    margin-top: 3rem;
+    font-size: rem(32);
+    padding-bottom: rem(8);
+    border-bottom: $base-border;
+    + .method_title {
+        margin-top: 2rem;
+    }
+}
+
+.method_title {
+    margin-top: 3rem;
+    font-size: rem(20);
+}
+
+pre {
+	display: block;
+	position: relative;
+	margin: 1rem auto;
+	text-align: left;
+	font-family: monospace;
+	line-height: 1.2em;
+	word-wrap: break-word;
+}
+code {
+	font-family: monospace;
+}
+
+pre code {
+	display: block;
+	padding: 1rem rem(10);
+	overflow: auto;
+	max-height: 400px;
+	word-wrap: normal;
+	background: $dark-blue;
+	color: $light-gray;
+    font-size: 1rem;
+}
+
+#{$all-buttons} {
+    font-weight: normal;
+}
+
+.button, html .button {
+    @extend #{$all-buttons};
+	-webkit-appearance: none;
+}
