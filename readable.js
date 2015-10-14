@@ -75,6 +75,8 @@
     };
 
     _readable.index = function(number) {
+        //ensure that number will be treated as a number rather than a string
+        number = parseInt(number);
         return number + 1;
     };
 
