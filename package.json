@@ -1,0 +1,18 @@
+{
+  "name": "readableUI",
+  "version": "0.0.0",
+  "description": "Handy methods to help make your data user-friendly and back again",
+  "main": "readable.js",
+  "scripts": {
+    "test": "readable.downStyle()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vacas5/readableUI.git"
+  },
+  "author": "Russell Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vacas5/readableUI/issues"
+  }
+}
