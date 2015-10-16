@@ -1,6 +1,6 @@
 {
   "name": "readableui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Handy methods to help make your data user-friendly and back again",
   "main": "readable.js",
   "scripts": {
